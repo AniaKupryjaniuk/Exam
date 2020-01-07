@@ -100,7 +100,7 @@ main {
 
 /*HEADER.................................................*/
 .logo {
-    width: 100%;
+    width: 5vw;
     margin: 0 5%;
 }
 
@@ -201,6 +201,7 @@ header a {
 
 /*PORTFOLIO PAGE..............................................*/
 .link {
+    font-size: 60%;
     display: block;
     text-align: center;
     color: white;
@@ -316,15 +317,20 @@ li {
     }
 
     .themes h2 {
+        background: #595959;
         width: 30%;
-        font-family: "roboto";
-        color: white;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
-        justify-content: center;
+        font-weight: lighter;
+
     }
 
     .themes:hover {
         opacity: 0.4;
         cursor: pointer;
+    }
+    .link a {
+        font-size: 80%;
     }
 }
