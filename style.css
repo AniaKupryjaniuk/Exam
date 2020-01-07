@@ -20,11 +20,9 @@ header {
 main {
     margin-top: 7%;
     grid-area: main;
-
 }
 
 /*ANIMATION............................*/
-
 #animation {
     width: 30vw;
     margin-bottom: 5%;
@@ -102,7 +100,7 @@ main {
 
 /*HEADER.................................................*/
 .logo {
-    width: 5%;
+    width: 100%;
     margin: 0 5%;
 }
 
@@ -147,17 +145,6 @@ header a {
 /*INDEX PAGE...............................................*/
 
 
-.themes h2 {
-    width: auto;
-    font-family: "roboto";
-    color: white;
-    font-size: 2vw;
-    font-weight: lighter;
-    text-align: center;
-    justify-content: center;
-
-}
-
 .container {
     border: 10px solid #595959;
     background-image: url(images/main.png);
@@ -175,21 +162,17 @@ header a {
 }
 
 /*ABOUT PAGE ...............................................*/
-
 .description img {
     border: 10px solid #595959;
     width: 30%;
     margin-left: auto;
     margin-right: auto;
     display: block;
-}
-
-.description h1 margin-left: 35%;
-margin-top: 0;
 
 }
+
 .links {
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -247,7 +230,7 @@ h1 {
 h2 {
     padding-top: 5px;
     border-top: #595959 solid;
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 h3 {
@@ -303,41 +286,45 @@ li {
         height: 15vh;
         transition: 100ms ease-in-out;
         margin-bottom: 40px;
+
     }
+
+    .themes h2 {
+        width: auto;
+        font-family: "roboto";
+        color: white;
+        font-size: 2vw;
+        font-weight: lighter;
+        text-align: center;
+        justify-content: center;
+
+    }
+
 
     .themes:hover {
         cursor: pointer;
         border: 2px solid white;
     }
-
-
-
 }
 
-@media only screen and (max-width 900px) {
+@media only screen and (max-width: 900px) {
 
     #section {
-        display: grid;
-        grid-auto-columns: 1fr 1fr;
-        grid-template-areas:
-            "theme1 theme2 theme3 theme4";
-        grid-gap: 30px;
+        display: block;
         justify-content: center;
         text-align: center;
     }
 
-    .themes {
-        background-color: #595959;
-        height: vw;
-        width: 40%;
-        transition: 100ms ease-in-out;
-        margin-bottom: 40px;
+    .themes h2 {
+        width: 30%;
+        font-family: "roboto";
+        color: white;
+        text-align: center;
+        justify-content: center;
     }
 
     .themes:hover {
+        opacity: 0.4;
         cursor: pointer;
-        font-size: 3vw;
     }
-
-
 }
